@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             TokenResponse("ONE", "Refresh_Token_One", 1630008916902)
         )
 
-        Log.d(TAG, "Initial Value $SharedPreferenceManager.getToken()")
+        Log.d(TAG, "Initial Value " + SharedPreferenceManager.getToken().toString())
 
         testRefreshToken()
     }
